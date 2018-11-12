@@ -36,8 +36,9 @@ Console.WriteLine("Your story is done!")
 Press()
 Randomize()
 Dim Slcted1 = Math.Round(Rnd() * 5) - 1
-Dim Slcted2 = Math.Round(Rnd() * 5) - 1
-Console.WriteLine("The " + Nick1 + " " + Lvl2)
+Dim Slcted2 = Math.Round(Rnd() * 6) - 1
+Console.WriteLine("The " + Nick1 + " " + Lvl2Strings1(Slcted1) + " was " + Vrb1 + " by " + Lvl2String2(Slcted2) + ".")
+Press()
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
