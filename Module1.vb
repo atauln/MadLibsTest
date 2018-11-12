@@ -1,8 +1,8 @@
 ﻿Module Module1
     Dim Lvl1Strings2 = {"creeper", "zombie", "husk", "skeleton", "wither"}
     Dim Lvl1Strings1 = {"princess", "bed", "bedroom", "XBox", "footon"}
-    Dim Lvl2Strings1 As Array
-    Dim Lvl2Strings2 As Array
+    Dim Lvl2Strings1 = {"rose", "door", "iron golem", "creeper", "criminal"}
+    Dim Lvl2Strings2 = {"Harry Potter", "Hermione Granger", "Ronald Weasley", "Severus Snape", "Albus Dumbledore", "Buckbeak"}
     Sub Press()
         Console.WriteLine("Press any key..")
         Console.ReadKey(True)
@@ -37,6 +37,7 @@ Press()
 Randomize()
 Dim Slcted1 = Math.Round(Rnd() * 5) - 1
 Dim Slcted2 = Math.Round(Rnd() * 5) - 1
+Console.WriteLine("The " + Nick1 + " " + Lvl2)
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
