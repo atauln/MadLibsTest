@@ -1,6 +1,8 @@
 ﻿Module Module1
     Dim Lvl1Strings2 = {"creeper", "zombie", "husk", "skeleton", "wither"}
     Dim Lvl1Strings1 = {"princess", "bed", "bedroom", "XBox", "footon"}
+    Dim Lvl2Strings1 As Array
+    Dim Lvl2Strings2 As Array
     Sub Press()
         Console.WriteLine("Press any key..")
         Console.ReadKey(True)
@@ -28,6 +30,13 @@
         Press()
         Console.WriteLine("Nickname: ")
         Dim Nick1 = Console.ReadLine()
+Console.WriteLine("Verb (in past tense): ")
+Dim Vrb1 = Console.ReadLine()
+Console.WriteLine("Your story is done!")
+Press()
+Randomize()
+Dim Slcted1 = Math.Round(Rnd() * 5) - 1
+Dim Slcted2 = Math.Round(Rnd() * 5) - 1
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
