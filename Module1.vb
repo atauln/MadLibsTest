@@ -26,6 +26,8 @@
         Console.Clear()
         Console.WriteLine("Welcome to Level 2, " + name)
         Press()
+        Console.WriteLine("Nickname: ")
+        Dim Nick1 = Console.ReadLine()
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
