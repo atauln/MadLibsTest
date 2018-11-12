@@ -1,4 +1,7 @@
 ﻿Module Module1
+    Sub Press()
+        Console.WriteLine("Press any key..")
+    End Sub
     Sub Lvl1(name)
         Console.Clear()
         Console.WriteLine("Welcome to Level 1, " + name)
