@@ -59,7 +59,7 @@
         Randomize()
         Dim Slcted1 = Math.Round(Rnd()*5)-1
         Dim Slcted2 = Math.Round(Rnd()*5)-1
-        Console.WriteLine(" The " + Adj1 + " " + Lvl3Strings1(Slcted1) + " was making a "
+        Console.WriteLine(" The " + Adj1 + " " + Lvl3Strings1(Slcted1) + " was making a " + Adj2 + " "
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
