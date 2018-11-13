@@ -3,8 +3,8 @@
     Dim Lvl1Strings1 = {"princess", "bed", "bedroom", "XBox", "footon"}
     Dim Lvl2Strings1 = {"rose", "door", "iron golem", "creeper", "criminal"}
     Dim Lvl2Strings2 = {"Harry Potter", "Hermione Granger", "Ronald Weasley", "Severus Snape", "Albus Dumbledore", "Buckbeak"}
-    Dim Lvl3Strings1(5) As Array
-    Dim Lvl3Strings2(5) As Array
+    Dim Lvl3Strings1 = {"dog", "cat", "ocelot", "wolf", "monkey"}
+    Dim Lvl3Strings2 = {"cake", "pie", "nametag", "tree", "lemon"}
     
     Sub Press()
         Console.WriteLine("Press any key..")
@@ -53,7 +53,7 @@
         Console.WriteLine( "Adjective: ")
         Dim Adj1 = Console.ReadLine()
         Console.WriteLine(" Adjective: ")
-        Din Adj2 = Console.Readline()
+        Dim Adj2 = Console.Readline()
         Console.WriteLine(" Your story is done! ")
         Press()
         Randomize()
