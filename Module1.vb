@@ -22,7 +22,10 @@
         Dim Slcted2 = Math.Round(Rnd() * 5) - 1
         Console.WriteLine("The " + Adj1 + " " + Lvl1Strings1(Slcted1) + " was " + Vrb1 + "ing away the " + Lvl1Strings2(Slcted2) + ".")
         Press()
-        End
+        Console.WriteLine("Would you like to continue to level 2?")
+        If Console.ReadLine() = "Yes" Then
+            Lvl2(name)
+        End If
     End Sub
     Sub Lvl2(name)
         Console.Clear()
@@ -30,15 +33,15 @@
         Press()
         Console.WriteLine("Nickname: ")
         Dim Nick1 = Console.ReadLine()
-Console.WriteLine("Verb (in past tense): ")
-Dim Vrb1 = Console.ReadLine()
-Console.WriteLine("Your story is done!")
-Press()
-Randomize()
-Dim Slcted1 = Math.Round(Rnd() * 5) - 1
-Dim Slcted2 = Math.Round(Rnd() * 6) - 1
-Console.WriteLine("The " + Nick1 + " " + Lvl2Strings1(Slcted1) + " was " + Vrb1 + " by " + Lvl2String2(Slcted2) + ".")
-Press()
+        Console.WriteLine("Verb (in past tense): ")
+        Dim Vrb1 = Console.ReadLine()
+        Console.WriteLine("Your story is done!")
+        Press()
+        Randomize()
+        Dim Slcted1 = Math.Round(Rnd() * 5) - 1
+        Dim Slcted2 = Math.Round(Rnd() * 6) - 1
+        Console.WriteLine("The " + Nick1 + " " + Lvl2Strings1(Slcted1) + " was " + Vrb1 + " by " + Lvl2Strings2(Slcted2) + ".")
+        Press()
     End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
