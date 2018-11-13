@@ -3,6 +3,9 @@
     Dim Lvl1Strings1 = {"princess", "bed", "bedroom", "XBox", "footon"}
     Dim Lvl2Strings1 = {"rose", "door", "iron golem", "creeper", "criminal"}
     Dim Lvl2Strings2 = {"Harry Potter", "Hermione Granger", "Ronald Weasley", "Severus Snape", "Albus Dumbledore", "Buckbeak"}
+    Dim Lvl3Strings1(5) As Array
+    Dim Lvl3Strings2(5) As Array
+    
     Sub Press()
         Console.WriteLine("Press any key..")
         Console.ReadKey(True)
@@ -43,6 +46,21 @@
         Console.WriteLine("The " + Nick1 + " " + Lvl2Strings1(Slcted1) + " was " + Vrb1 + " by " + Lvl2Strings2(Slcted2) + ".")
         Press()
     End Sub
+    Sub Lvl3(name)
+        Console.Clear
+        Console.WriteLine("Welcome to level 3, " + NameofUser)
+        Press()
+        Console.WriteLine( "Adjective: ")
+        Dim Adj1 = Console.ReadLine()
+        Console.WriteLine(" Adjective: ")
+        Din Adj2 = Console.Readline()
+        Console.WriteLine(" Your story is done! ")
+        Press()
+        Randomize()
+        Dim Slcted1 = Math.Round(Rnd()*5)-1
+        Dim Slcted2 = Math.Round(Rnd()*5)-1
+        Console.WriteLine(" The " + Adj1 + " " + Lvl3Strings1(Slcted1) + " was making a "
+    End Sub
     Sub Main()
         Console.WriteLine("Welcome to Mad Libs Lite!")
         Console.WriteLine("What is your name?")
@@ -55,6 +73,8 @@
             Lvl1(NameofUser)
         ElseIf numLvlResponse = 2 Then
             Lvl2(NameofUser)
+        ElseIf numLvlResponse = 3 Then
+            
         Else
             Console.WriteLine("That is not a valid response...")
             Console.WriteLine("Terminating program...")
